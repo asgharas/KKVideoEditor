@@ -4,6 +4,10 @@ import com.asgharas.kkvideoeditor.data.model.VideoFilter
 import com.asgharas.kkvideoeditor.data.model.VideoMetadata
 
 actual class VideoProcessor actual constructor() {
+
+    actual fun initialize(platformContext: Any?) {
+    }
+
     actual suspend fun trimVideo(
         sourceUri: String,
         startMs: Long,
@@ -41,4 +45,6 @@ actual class VideoProcessor actual constructor() {
 
     actual fun cancelProcessing() {
     }
+
+
 }

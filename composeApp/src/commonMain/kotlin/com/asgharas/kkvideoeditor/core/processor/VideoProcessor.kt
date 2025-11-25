@@ -13,6 +13,16 @@ import com.asgharas.kkvideoeditor.data.model.VideoMetadata
  */
 expect class VideoProcessor() {
 
+
+    /**
+     * Initialize the processor with platform-specific context
+     * Must be called before any other operations
+     *
+     * @param platformContext Android: Context, iOS: null (not needed)
+     */
+
+    fun initialize(platformContext: Any?)
+
     /**
      * Trim a video to a specific time range
      * Creates a new video file with only the specified portion
